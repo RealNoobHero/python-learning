@@ -2,7 +2,7 @@
 import sys,math
 from random import randint #.1 clean up code
 while True:
-    print('Choose your dice: coin, d4, d6 d8, d10, or d20 Press Q to quit')
+    print('Choose your dice, or coin: coin, d4, d6 d8, d10, or d20 Press Q to quit')#.2 clarify instructions
     dice=input()
     if dice==('coin'):
         for i in range(1):
@@ -19,6 +19,8 @@ while True:
         print('You got a '+str(randint(1,8)))
     if dice==('d10'):
         print('You got a '+str(randint(1,10)))
+    if dice==('d12'):
+        print(('You got a '+str(randint(1,12)))#.2 add d12
     if dice==('d20'):
         print('You got a '+str(randint(1,20)))
     if dice==('q'):
